@@ -1,0 +1,13 @@
+{
+  "name": "sexualharrassmentreport",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "debug": "~2.6.3",
+    "express": "^4.15.3"
+  }
+}
