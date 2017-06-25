@@ -14,6 +14,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // var sendback = require('./SendBack')
 // app.get('/sendback',sendback)
 
+app.get('/index',function(req,res){
+  res.setHeader('content-type','text/html');
+  res.send('<p>Add [URL]/file to your <a href="https://www.twilio.com/console/phone-numbers/incoming">twilio webhook.</a></p>')
+  res.end();
+});
+
 app.post('/file',function(req,res){
 
   //var From = req.body.From;
